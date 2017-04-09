@@ -14,7 +14,7 @@
          <h3>ราคานำ้มันวันนี้</h3>
     
          <?php 
-
+			include("lib/nusoap.php");
          
 			$client = new SoapClient("http://www.pttplc.com/webservice/pttinfo.asmx?WSDL",
 			array(
