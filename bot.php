@@ -20,8 +20,9 @@ if (!is_null($events['events'])) {
 			{
 				$messages = [
 					'type' => 'image',
-					'originalContenUrl' => 'https://scontent-fbkk5-7.us-fbcdn.net/v1/t.1-48/1426l78O9684I4108ZPH0J4S8_842023153_K1DlXQOI5DHP/dskvvc.qpjhg.xmwo/p/data/139/139491-7-5535.jpg'
-				]
+					'originalContenUrl' => 'https://scontent-fbkk5-7.us-fbcdn.net/v1/t.1-48/1426l78O9684I4108ZPH0J4S8_842023153_K1DlXQOI5DHP/dskvvc.qpjhg.xmwo/p/data/139/139491-7-5535.jpg',
+					'previewImageUrl' => 'https://scontent-fbkk5-7.us-fbcdn.net/v1/t.1-48/1426l78O9684I4108ZPH0J4S8_842023153_K1DlXQOI5DHP/dskvvc.qpjhg.xmwo/p/data/139/139491-7-5535.jpg'
+				];
 			}else{
 				$messages = [
 					'type' => 'text',
