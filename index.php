@@ -19,9 +19,6 @@
 </head>                  
 
 <body>
-       <div style="max-width:100%;width:400px;margin:auto;">
-         <h3>ราคานำ้มันวันนี้</h3>
-    
          <?php 
 		 
 				$wsdl = 'http://www.pttplc.com/webservice/pttinfo.asmx?wsdl';
@@ -38,6 +35,7 @@
 				
 				echo $objectResult->CurrentOilPriceResult;
 				echo '<pre>'.$objectResult->CurrentOilPriceResult.'</pre>';
+		?>
   
 </body>
 
