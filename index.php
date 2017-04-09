@@ -30,7 +30,7 @@
 			   'MM' => date('m'),
 			   'YYYY' => date('Y')
 			);
-
+			echo "before call";
 		    $data = $client->GetOilPrice($params);
 			$ob = $data->GetOilPriceResult;
             $xml = new SimpleXMLElement($ob);
@@ -42,7 +42,7 @@
 				  echo $val->PRODUCT .'  '.$val->PRICE.' บาท<br>';
 				}
             }
-
+			echo "after call";
          ?>
            
    </div>
