@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
 
 			$messages = [
 					'type' => 'text',
-					'text' => "สวัสดีครับ ID ของคุณคือ"
+					'text' => "สวัสดีครับ ID ของคุณคือ".$events['events'][0]['source']['userId']
 				];	
 
 
