@@ -27,8 +27,8 @@ if (!is_null($events['events'])) {
 			{
 				$messages = [
 					'type' => 'image',
-					'originalContentUrl' => "https://nuuneoi.com/blog/912/IMG_6225-2-n.jpg",
-					'previewImageUrl' => "https://nuuneoi.com/blog/912/IMG_6225-2-n.jpg"
+					'originalContentUrl' => "https://ncmedia.azureedge.net/ncmedia/2017/03/Creative-Spaces-Maker-Commons-2-768x565.jpg",
+					'previewImageUrl' => "https://ncmedia.azureedge.net/ncmedia/2017/03/Creative-Spaces-Maker-Commons-2-768x565.jpg"
 				];	
 				
 			}else{
