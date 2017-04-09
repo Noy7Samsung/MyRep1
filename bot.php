@@ -16,11 +16,18 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			$messages = [
+			if ($text == "abc")
+			{
+				$messages = [
+					'type' => 'text',
+					'text' => "google.com"
+				];	
+			}else{
+				$messages = [
 					'type' => 'text',
 					'text' => "สวัสดีครับ ID ของคุณคือ".$events['events'][0]['source']['userId']
 				];	
-
+			}
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
