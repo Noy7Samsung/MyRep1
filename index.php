@@ -35,6 +35,7 @@
 			$ob = $data->GetOilPriceResult;
             $xml = new SimpleXMLElement($ob);
            
+			echo $data;
                // PRICE_DATE , PRODUCT ,PRICE
             foreach ($xml  as  $key =>$val) {  
 				if($val->PRICE != ''){
