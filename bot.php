@@ -23,10 +23,18 @@ if (!is_null($events['events'])) {
 					'packageId' => '1',
 					'stickerId' => '16'
 				];
+			}elseif ($text == "image")
+			{
+				$messages = [
+					'type' => 'image',
+					'originalContentUrl' => "https://nuuneoi.com/blog/912/IMG_6225-2-n.jpg",
+					'previewImageUrl' => "https://nuuneoi.com/blog/912/IMG_6225-2-n.jpg"
+				];	
+				
 			}else{
 				$messages = [
 					'type' => 'text',
-					'text' => "สวัสดีครับ ID ของคุณคือ".$events['events'][0]['source']['userId']
+					'text' => "สวัสดีครับ ID ของคุณคือ ".$events['events'][0]['source']['userId']
 				];	
 			}
 
