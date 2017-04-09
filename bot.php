@@ -16,36 +16,12 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			if ($text == "ราคาน้ำมัน")
+			if ($text == "image")
 			{
-				$client = new SoapClient("http://www.pttplc.com/webservice/pttinfo.asmx?WSDL",
-		    	array(
-			           "trace"      => 1,		// enable trace to view what is happening
-			           "exceptions" => 0,		// disable exceptions
-			          "cache_wsdl" => 0) 		// disable any caching on the wsdl, encase you alter the wsdl server
-		           );
-
-               $params = array(
-                   'Language' => "en",
-                   'DD' => date('d'),
-                   'MM' => date('m'),
-                   'YYYY' => date('Y')
-               );
-				$data = $client->GetOilPrice($params);
-				$ob = $data->GetOilPriceResult;
-				$xml = new SimpleXMLElement($ob);
-           
-				$str_price = "";
-				$sep = "";
-               // PRICE_DATE , PRODUCT ,PRICE
-				foreach ($xml  as  $key =>$val) {  
-              
-					if($val->PRICE != ''){
-						$str_price = $str_price . $sep . $val->PRODUCT .'  '.$val->PRICE.' บาท<br>';
-					}
-					$sep = "\r\n";
-               }
-			   
+				$messages = [
+					'type' => 'image',
+					'originalContenUrl' => 'https://scontent-fbkk5-7.us-fbcdn.net/v1/t.1-48/1426l78O9684I4108ZPH0J4S8_842023153_K1DlXQOI5DHP/dskvvc.qpjhg.xmwo/p/data/139/139491-7-5535.jpg'
+				]
 			}else{
 				$messages = [
 					'type' => 'text',
