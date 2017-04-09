@@ -24,24 +24,20 @@
     
          <?php 
 		 
-			$wsdl = 'http://www.pttplc.com/webservice/pttinfo.asmx?wsdl';
+				$wsdl = 'http://www.pttplc.com/webservice/pttinfo.asmx?wsdl';
 	
-	$client = new SoapClient($wsdl); 
-	
-	$methodName = 'CurrentOilPrice'; 
-	
-	$params = array('Language'=>'EN'); 
-	
-	$soapAction = 'http://www.pttplc.com/ptt_webservice/CurrentOilPrice'; 
-	
-	$objectResult = $client->__soapCall($methodName, array('parameters' => $params), array('soapaction' => $soapAction)); 
-	
-	echo $objectResult->CurrentOilPriceResult;
-	echo '<pre>'.$objectResult->CurrentOilPriceResult.'</pre>';
-	
-         ?>
-           
-   </div>
+				$client = new SoapClient($wsdl); 
+				
+				$methodName = 'CurrentOilPrice'; 
+				
+				$params = array('Language'=>'EN'); 
+				
+				$soapAction = 'http://www.pttplc.com/ptt_webservice/CurrentOilPrice'; 
+				
+				$objectResult = $client->__soapCall($methodName, array('parameters' => $params), array('soapaction' => $soapAction)); 
+				
+				echo $objectResult->CurrentOilPriceResult;
+				echo '<pre>'.$objectResult->CurrentOilPriceResult.'</pre>';
   
 </body>
 
