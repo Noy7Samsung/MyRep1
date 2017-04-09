@@ -16,11 +16,11 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			if($event['message']['text'] == "สวัสดี"{
+			if($event['message']['text'] == "hello"{
 				// Build message to reply back
 				$messages = [
 					'type' => 'text',
-					'text' => "สวัสดีครับ ID ของคุณคือ".$events['events'][0]['source']['userId'];
+					'text' => "สวัสดีครับ ID ของคุณคือ";//.$events['events'][0]['source']['userId'];
 				];				
 			}else{
 				// Build message to reply back
